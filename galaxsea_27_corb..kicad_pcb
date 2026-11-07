@@ -1,0 +1,54 @@
+(kicad_pcb (version 20240108) (generator pcbnew)
+
+  (general
+    (thickness 1.6)
+  )
+
+  (paper "A4")
+
+  (title_block
+    (title "master-nixos")
+    (date "2026-07-06")
+    (rev "1.0")
+    (company "DSSystems")
+  )
+
+  (layers
+    (0 "F.Cu" signal)
+    (1 "B.Cu" signal)
+    (2 "F.Adhes" user)
+    (3 "B.Adhes" user)
+    (4 "F.Paste" user)
+    (5 "B.Paste" user)
+    (6 "F.SilkS" user)
+    (7 "B.SilkS" user)
+    (8 "F.Mask" user)
+    (9 "B.Mask" user)
+    (10 "Edge.Cuts" user)
+    (11 "F.CrtYd" user)
+    (12 "B.CrtYd" user)
+    (13 "F.Fab" user)
+    (14 "B.Fab" user)
+  )
+
+  (setup
+    (stackup
+      (layer "F.SilkS" (type "Top Silk Screen"))
+      (layer "F.Paste" (type "Top Solder Paste"))
+      (layer "F.Mask" (type "Top Solder Mask") (color "Green"))
+      (layer "F.Cu" (type "copper") (thickness 0.035))
+      (layer "dielectric 1" (type "core") (thickness 1.51) (material "FR4") (epsilon_r 4.5) (loss_tangent 0.02))
+      (layer "B.Cu" (type "copper") (thickness 0.035))
+      (layer "B.Mask" (type "Bottom Solder Mask") (color "Green"))
+      (layer "B.Paste" (type "Bottom Solder Paste"))
+      (layer "B.SilkS" (type "Bottom Silk Screen"))
+    )
+    (pad_to_mask_clearance 0.05)
+    (pcbplotparams
+      (layerselection 0x00010fc_ffffffff)
+      (plot_on_all_layers_selection 0x0000000_00000000)
+    )
+  )
+
+  (net 0 "")
+)
