@@ -482,7 +482,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "Untitled.kicad_pro",
+    "filename": "galaxsea_27_corb..kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -637,18 +637,18 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "Untitled.kicad_sch",
-        "name": "Untitled",
+        "filename": "galaxsea_27_corb..kicad_sch",
+        "name": "galaxsea_27_corb.",
         "uuid": "acff5afc-a1a6-47d3-951e-517df1757e1c"
       }
     ],
-    "used_designators": "SW1-2,L1,F1,Y1,U1-4,R1-10,C1-16,#PWR1-25,J1-3",
+    "used_designators": "SW1-2,L1,F1,U1-4,Y1,#PWR1-26,R1-10,C1-16,J1-3",
     "variants": []
   },
   "sheets": [
     [
       "acff5afc-a1a6-47d3-951e-517df1757e1c",
-      "Untitled"
+      "galaxsea_27_corb."
     ]
   ],
   "text_variables": {},
