@@ -6619,7 +6619,7 @@
 		(uuid "5de1acd0-de76-45ed-a98a-27735c8a1737")
 	)
 	(rectangle
-		(start 246.38 34.29)
+		(start 231.775 34.29)
 		(end 285.75 121.285)
 		(stroke
 			(width 0)
@@ -6696,7 +6696,7 @@
 	)
 	(text "find good footprint for the connectors to speaker later..\n"
 		(exclude_from_sim no)
-		(at 244.602 83.312 90)
+		(at 230.124 82.042 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7098,6 +7098,16 @@
 	)
 	(wire
 		(pts
+			(xy 250.19 87.63) (xy 252.73 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "15edf626-e6c7-4106-803d-e83e6d4388ee")
+	)
+	(wire
+		(pts
 			(xy 386.08 81.28) (xy 386.08 91.44)
 		)
 		(stroke
@@ -7438,6 +7448,16 @@
 	)
 	(wire
 		(pts
+			(xy 257.81 46.99) (xy 259.08 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "56435df7-6e6d-4f4b-805b-c2a9e8def6d2")
+	)
+	(wire
+		(pts
 			(xy 361.95 49.53) (xy 374.65 49.53)
 		)
 		(stroke
@@ -7505,6 +7525,16 @@
 			(type default)
 		)
 		(uuid "61457142-0479-4d21-a89c-6ded81516ecf")
+	)
+	(wire
+		(pts
+			(xy 250.19 109.22) (xy 252.73 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "630c0be4-8823-4094-9256-0a2e625153a1")
 	)
 	(wire
 		(pts
@@ -7798,6 +7828,16 @@
 	)
 	(wire
 		(pts
+			(xy 257.81 87.63) (xy 259.08 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "928cf198-5170-4f89-9c51-1c591f976a7b")
+	)
+	(wire
+		(pts
 			(xy 408.94 59.69) (xy 398.78 59.69)
 		)
 		(stroke
@@ -7825,6 +7865,16 @@
 			(type default)
 		)
 		(uuid "96f0a681-63fa-4fc7-8cf8-27e0b72cbd2f")
+	)
+	(wire
+		(pts
+			(xy 257.81 109.22) (xy 259.08 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9929100f-1bf0-49ec-aaee-5b839eee07a4")
 	)
 	(wire
 		(pts
@@ -8298,6 +8348,16 @@
 	)
 	(wire
 		(pts
+			(xy 257.81 67.31) (xy 259.08 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db025b72-e051-4bae-9288-7e82c5d27c42")
+	)
+	(wire
+		(pts
 			(xy 48.26 104.14) (xy 48.26 115.57)
 		)
 		(stroke
@@ -8325,6 +8385,16 @@
 			(type default)
 		)
 		(uuid "df761248-19f4-441b-b975-35cadc7b9c12")
+	)
+	(wire
+		(pts
+			(xy 250.19 67.31) (xy 252.73 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e33ffd88-d11b-445c-87fb-395d0b617c90")
 	)
 	(wire
 		(pts
@@ -8435,6 +8505,16 @@
 			(type default)
 		)
 		(uuid "fbd36c7b-34a7-4182-b202-b449b6390047")
+	)
+	(wire
+		(pts
+			(xy 250.19 46.99) (xy 252.73 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd72ca47-defd-4a65-8ea6-090852998dac")
 	)
 	(wire
 		(pts
@@ -8956,8 +9036,8 @@
 		)
 		(uuid "761bc2b7-1f0e-4afd-af50-14b535ec37e1")
 	)
-	(label "STACK_G"
-		(at 259.08 109.22 180)
+	(label "STACK_SPEAKER"
+		(at 250.19 109.22 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9107,7 +9187,7 @@
 		(uuid "94fc23e7-04c8-4a9c-a3b2-013ba652e59f")
 	)
 	(label "STACK_G"
-		(at 259.08 46.99 180)
+		(at 250.19 46.99 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9406,8 +9486,8 @@
 		)
 		(uuid "ee9d1e5b-74ce-44d1-854f-dda4e0a31511")
 	)
-	(label "STACK_G"
-		(at 259.08 87.63 180)
+	(label "STACK_Y"
+		(at 250.19 87.63 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9456,8 +9536,8 @@
 		)
 		(uuid "f4d16e67-3083-4047-b51d-3d88c16f7083")
 	)
-	(label "STACK_G"
-		(at 259.08 67.31 180)
+	(label "STACK_R"
+		(at 250.19 67.31 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9661,6 +9741,86 @@
 			(project "galaxsea_27_corb."
 				(path "/acff5afc-a1a6-47d3-951e-517df1757e1c"
 					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 255.27 46.99 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "05beb430-5ee5-4b9a-9718-99084973e0f8")
+		(property "Reference" "R14"
+			(at 255.27 40.64 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1kR"
+			(at 255.27 43.18 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 255.27 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 255.27 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 255.27 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "f6b0fc84-3b9a-4291-af18-2348135b5461")
+		)
+		(pin "1"
+			(uuid "fa5a408f-d660-4378-854c-4f044f944b4a")
+		)
+		(instances
+			(project "galaxsea_27_corb."
+				(path "/acff5afc-a1a6-47d3-951e-517df1757e1c"
+					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -13094,6 +13254,86 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 255.27 109.22 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7cfe4a80-a4b9-4d5d-9727-3f3f6db42205")
+		(property "Reference" "R11"
+			(at 255.27 102.87 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1kR"
+			(at 255.27 105.41 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 255.27 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 255.27 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 255.27 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "afa30181-8a34-4e96-bdad-0247ccde86eb")
+		)
+		(pin "1"
+			(uuid "18d17a34-5179-45d4-8e85-4d829bb7ea9e")
+		)
+		(instances
+			(project "galaxsea_27_corb."
+				(path "/acff5afc-a1a6-47d3-951e-517df1757e1c"
+					(reference "R11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 55.88 208.28 0)
 		(unit 1)
@@ -14151,6 +14391,86 @@
 			(project "galaxsea_27_corb."
 				(path "/acff5afc-a1a6-47d3-951e-517df1757e1c"
 					(reference "C15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 255.27 87.63 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a990e935-d876-42f1-bd68-967a73ec47bc")
+		(property "Reference" "R12"
+			(at 255.27 81.28 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1kR"
+			(at 255.27 83.82 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 255.27 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 255.27 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 255.27 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "a97018f1-533d-439f-b5af-06e793f59b1f")
+		)
+		(pin "1"
+			(uuid "e897a592-5724-48c1-8320-c6576080a8d6")
+		)
+		(instances
+			(project "galaxsea_27_corb."
+				(path "/acff5afc-a1a6-47d3-951e-517df1757e1c"
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -16749,6 +17069,86 @@
 			(project "galaxsea_27_corb."
 				(path "/acff5afc-a1a6-47d3-951e-517df1757e1c"
 					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 255.27 67.31 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fe9705d2-a9ef-44ac-8d7e-14532bf19944")
+		(property "Reference" "R13"
+			(at 255.27 60.96 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1kR"
+			(at 255.27 63.5 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 255.27 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 255.27 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 255.27 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "661e8592-3bae-4a0c-a323-d9da32ec34d2")
+		)
+		(pin "1"
+			(uuid "255bb903-d3f3-412c-b046-08e88d7bb742")
+		)
+		(instances
+			(project "galaxsea_27_corb."
+				(path "/acff5afc-a1a6-47d3-951e-517df1757e1c"
+					(reference "R13")
 					(unit 1)
 				)
 			)
