@@ -1,3 +1,3 @@
 # galaxsea 2027 corb
 
-hello
+wassup chat... i'm playing Grand Theft Auto VI......
