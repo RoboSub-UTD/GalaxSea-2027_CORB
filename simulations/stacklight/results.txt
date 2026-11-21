@@ -1,0 +1,70 @@
+STACKLIGHT MOSFET FUNCTIONAL SIMULATION
+
+Run: python3 simulations/stacklight/run.py
+Engine used: KiCad bundled ngspice 45.2 shared library.
+Files: stacklight.cir, dc.tsv, transient.tsv.
+
+Extracted schematic connectivity (KiCad XML netlist):
+Q1 red:   gate via R13=1k from GPIO9;  source S2 -> J12.3
+Q2 yellow:gate via R12=1k from GPIO10; source S3 -> J12.2
+Q3 green: gate via R14=1k from GPIO11; source S1 -> J12.4
+Q4 sound: gate via R11=1k from GPIO8;  source S4 -> J12.1
+All four AO3400A drains (pin 3) connect to +12V.
+Gates are pin 1; sources are pin 2. No gate pulldowns were found.
+The +12V net contains only the four drains in the exported netlist;
+ensure the real assembly has a defined 12V feed. J12 has four channels,
+so the lamp common and supply connection must be accounted for separately.
+KiCad warned about annotation errors during netlist export.
+
+Assumptions:
+12V supply; 0/3.3V GPIO; 120 ohm resistive load (100mA at 12V).
+Illustrative level-1 N-MOS model, VTO=1.05V, KP=40, RD=RS=15mOhm,
+plus explicit body diode. This is NOT a manufacturer AO3400A model.
+Its approximate low-voltage on resistance is consistent with the scale
+of the datasheet but is not a guaranteed device prediction.
+Low-side proposal includes a 100k gate-source pulldown and existing 1k
+series gate resistance. Temperature is ngspice default 27C.
+
+DC results (volts):
+GPIO   Existing source output   Proposed drain   Proposed load voltage
+0.0    0.000000                 12.000000        0.000000
+3.3    2.219313                  0.004127       11.995873
+
+Literal source=+12V, drain=load-to-ground case:
+Output is 11.287434V with gate low and 11.287435V with gate high.
+The body diode powers the load even when the channel is off.
+VGS is -12V at gate low, at the AO3400A absolute maximum magnitude,
+with no tolerance for supply variation or transients.
+
+Existing source-follower load current at gate high: about 18.5mA.
+Existing MOSFET dissipation in that illustrative operating point: 181mW.
+Proposed low-side load current at gate high: about 100mA.
+Proposed low-side MOSFET dissipation: about 0.413mW.
+The transient file exercises repeated GPIO low/high states over 6ms.
+No capacitances or inductances are included: edge speed, gate charge,
+inrush, ringing, flyback and switching losses are NOT validated.
+
+Interpretation:
+For a common-positive lamp: connect lamp common to +12V, AO3400A
+source pin 2 to GND, drain pin 3 to the channel input, and gate pin 1
+through the series resistor to GPIO. Share MCU and 12V supply ground.
+Add gate-to-source pulldowns so reset/high-impedance GPIO leaves it off.
+GPIO high turns the channel on; GPIO low turns it off. The drain is
+near ground when on and near +12V when off through the assumed load.
+Do not hard-short a driven GPIO to an opposing supply rail.
+
+For a common-ground lamp requiring +12V inputs: use a high-side driver
+or a suitable P-MOSFET plus level-shifting circuit. A 3.3V GPIO cannot
+directly drive this AO3400A to deliver 12V from its source.
+For an inductive sounder/load, evaluate a flyback/clamp circuit using
+its actual specifications before considering the design complete.
+
+Manufacturer reference:
+https://www.aosmd.com/sites/default/files/res/datasheets/AO3400A.pdf
+AO3400A specifies RDS(on) <=48mOhm at VGS=2.5V under datasheet test
+conditions; VDS maximum 30V and VGS absolute maximum +/-12V.
+Threshold voltage is not the fully-on gate voltage.
+
+Actual stacklight model, common wiring and channel current were not
+available. These are functional comparisons, not hardware signoff.
+No schematic or PCB changes were made.

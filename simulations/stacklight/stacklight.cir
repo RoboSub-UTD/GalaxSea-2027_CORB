@@ -1,0 +1,35 @@
+Stacklight: existing source follower, proposed low-side, and source at +12V
+* Illustrative AO3400A approximation, NOT a manufacturer model.
+* Room temperature, resistive 120 ohm load (100 mA nominal at 12 V).
+* Level 1 model cannot validate switching loss, SOA, avalanche or temperature.
+.model AO_APPROX NMOS (LEVEL=1 VTO=1.05 KP=40 RD=0.015 RS=0.015)
+.model BODY D (IS=1n N=1.5 RS=0.05)
+V12 supply 0 12
+Vgpio gpio 0 PULSE(0 3.3 1m 1u 1u 2m 4m)
+* Existing schematic: drain=12V, source=connector, gate via 1k.
+Rg_actual gpio ga 1k
+Ma supply ga actual actual AO_APPROX
+Da actual supply BODY
+Ra actual 0 120
+* Proposed for COMMON POSITIVE stacklight: source=GND, drain=connector.
+Rg_low gpio gl 1k
+Rpd gl 0 100k
+Ml low gl 0 0 AO_APPROX
+Dl 0 low BODY
+Rl supply low 120
+* Literal source=12V, drain=load: body diode conducts with gate LOW.
+Rg_reverse gpio gr 1k
+Mr reverse gr supply supply AO_APPROX
+Dr supply reverse BODY
+Rr reverse 0 120
+.control
+set wr_singlescale
+set wr_vecnames
+dc Vgpio 0 3.3 0.01
+let low_load = v(supply)-v(low)
+wrdata dc.tsv v(gpio) v(actual) v(low) low_load v(reverse)
+tran 2u 6m
+let low_load = v(supply)-v(low)
+wrdata transient.tsv v(gpio) v(actual) v(low) low_load v(reverse)
+.endc
+.end
