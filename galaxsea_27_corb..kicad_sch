@@ -9525,6 +9525,16 @@
 		)
 		(uuid "962a4aa4-19ac-4fc8-a346-e99ec7086d2a")
 	)
+	(label "G6"
+		(at 374.65 212.09 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "96b97598-45a6-4c9e-8ecf-290e299522ab")
+	)
 	(label "ESC4_PWM+"
 		(at 361.95 270.51 0)
 		(effects
@@ -9664,6 +9674,16 @@
 			(justify right bottom)
 		)
 		(uuid "bd254ae4-1970-41c8-8f06-d3795da33823")
+	)
+	(label "G6"
+		(at 361.95 207.01 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c1b79f28-18e8-46b2-8e91-824ddfbba290")
 	)
 	(label "GND"
 		(at 157.48 62.23 0)
@@ -9874,16 +9894,6 @@
 			(justify right bottom)
 		)
 		(uuid "fbf43544-3e1c-4a4a-98ad-c418ed2a0593")
-	)
-	(label "G6"
-		(at 361.95 257.81 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "fd13dd1f-7ced-42da-a63c-c68690e90ff7")
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
