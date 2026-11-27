@@ -6472,7 +6472,7 @@
 		)
 		(uuid "0abc9032-61c3-49c0-a2b5-4d1b97146015")
 	)
-	(text "spade connector (power from bus bar)"
+	(text "spade connector (get power from bus bar)\n"
 		(exclude_from_sim no)
 		(at 204.216 286.258 0)
 		(effects
@@ -6482,7 +6482,7 @@
 		)
 		(uuid "12b50f1e-a990-47b1-9e5b-2325398a2c2e")
 	)
-	(text "I2C UART!!!! FOR FUTURE EXPANSION\n(standard pin headers)\n\n"
+	(text "I2C UART!!!!\ni2c may be needed rn if we do max178320 bms\n\n\n"
 		(exclude_from_sim no)
 		(at 218.44 85.09 0)
 		(effects
@@ -6503,7 +6503,7 @@
 		)
 		(uuid "21612838-13f1-42d1-a0bd-a0cb990b6a09")
 	)
-	(text "male pin headers\nfutureproof"
+	(text ""
 		(exclude_from_sim no)
 		(at 139.954 86.614 0)
 		(effects
@@ -6533,7 +6533,7 @@
 		)
 		(uuid "690b09fb-bd7e-4035-a32e-a291218b97d6")
 	)
-	(text "bootsel button fyi (no jst connector bc jetson usb)\n\n"
+	(text "bootsel button fyi (no jst debug bc jetson usb s gud enough!)\n\n"
 		(exclude_from_sim no)
 		(at 92.456 263.652 0)
 		(effects
@@ -6545,7 +6545,7 @@
 	)
 	(text "esc + gimbal? pwm out\n"
 		(exclude_from_sim no)
-		(at 142.494 51.308 0)
+		(at 119.634 88.138 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6553,7 +6553,7 @@
 		)
 		(uuid "98c7376e-4680-488f-b358-54a6922d2b0d")
 	)
-	(text "analog signal for amp\n(screw terminals)\n"
+	(text "analog signal for amp\nspade\n"
 		(exclude_from_sim no)
 		(at 404.876 218.948 0)
 		(effects
@@ -6583,7 +6583,7 @@
 		)
 		(uuid "bc484725-1a0d-4043-a838-4dba87f1b5dc")
 	)
-	(text "bms + telemetery frsky thing (jst)\n\n"
+	(text "bms + telemetery frsky thing \n"
 		(exclude_from_sim no)
 		(at 217.678 153.416 0)
 		(effects
@@ -6603,7 +6603,7 @@
 		)
 		(uuid "c199baf4-8efa-4d41-b8c3-8526798443d3")
 	)
-	(text "12V rail controlled by 3v3, IC used\nTODO: ltspice tests w/ this ic..."
+	(text "12V rail controlled by 3v3, IC used bc mosfets too finncky\nTODO: ltspice tests w/ this ic..."
 		(exclude_from_sim no)
 		(at 196.088 215.392 0)
 		(effects
@@ -6623,9 +6623,9 @@
 		)
 		(uuid "de0e8e0b-adb9-4119-8c37-4e1ed14fdbc7")
 	)
-	(text "note to self: this creates inital 1v1 source bc net PGND"
+	(text "note to self: inductor helps create 1v1 source coming from internal ldo"
 		(exclude_from_sim no)
-		(at 300.482 281.178 0)
+		(at 352.552 146.05 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8926,7 +8926,7 @@
 		(uuid "fef93ad6-b4f4-4df1-a42f-7ff82a010d6b")
 	)
 	(label "G16"
-		(at 414.02 204.47 0)
+		(at 408.94 196.85 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8934,16 +8934,6 @@
 			(justify left bottom)
 		)
 		(uuid "03d8f451-e72a-4724-b866-38870e4ff6f6")
-	)
-	(label "A6"
-		(at 311.15 273.05 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "075e2ba6-9511-4fa2-af73-8e4a9e38d4db")
 	)
 	(label "GEN2_PWM+"
 		(at 361.95 275.59 0)
@@ -8996,7 +8986,7 @@
 		(uuid "181803f5-c2e3-4573-8c17-1909285beee5")
 	)
 	(label "ESC1_PWM+"
-		(at 176.53 57.15 0)
+		(at 153.67 93.98 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9085,26 +9075,6 @@
 		)
 		(uuid "2c9c5b4a-de90-40fc-98c4-8caa482a2d56")
 	)
-	(label "A4"
-		(at 311.15 267.97 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "2e29ae88-6ab9-49e8-b674-724d6ec8586d")
-	)
-	(label "A1"
-		(at 311.15 260.35 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "2e2c7969-7cdd-4052-b4b0-439b6feedcec")
-	)
 	(label "QSPI_SS"
 		(at 311.15 209.55 180)
 		(effects
@@ -9136,7 +9106,7 @@
 		(uuid "3526c06a-709f-415f-a61b-85b953314e51")
 	)
 	(label "GND"
-		(at 119.38 62.23 0)
+		(at 96.52 99.06 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9156,7 +9126,7 @@
 		(uuid "3680b68d-1614-45aa-a5db-7891a2aab1d1")
 	)
 	(label "G19"
-		(at 401.32 207.01 180)
+		(at 396.24 199.39 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9325,18 +9295,8 @@
 		)
 		(uuid "69ab499b-eff0-437f-a6aa-573816338f2f")
 	)
-	(label "A2"
-		(at 311.15 262.89 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "6e69925d-dbb9-487f-87da-a4e5562ee35e")
-	)
 	(label "ESC4_PWM+"
-		(at 119.38 57.15 0)
+		(at 96.52 93.98 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9376,7 +9336,7 @@
 		(uuid "7512bf83-dfd2-42c0-8e95-4040c0a23e75")
 	)
 	(label "G18"
-		(at 414.02 207.01 0)
+		(at 408.94 199.39 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9416,7 +9376,7 @@
 		(uuid "7d0f7c65-1ced-4301-a864-1a2d7b5e18d2")
 	)
 	(label "GND"
-		(at 138.43 62.23 0)
+		(at 115.57 99.06 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9446,7 +9406,7 @@
 		(uuid "840f5df0-44b7-4d21-8f38-5e758acfdde6")
 	)
 	(label "GND"
-		(at 176.53 62.23 0)
+		(at 153.67 99.06 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9516,7 +9476,7 @@
 		(uuid "93a2d04d-a5fa-435e-a24c-1b42dd2e2e26")
 	)
 	(label "ESC3_PWM+"
-		(at 138.43 57.15 0)
+		(at 115.57 93.98 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9585,16 +9545,6 @@
 		)
 		(uuid "9d17d29c-2818-42c8-bfd1-19354a10fe84")
 	)
-	(label "A5"
-		(at 311.15 270.51 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "9e565022-5df2-497e-8c2d-4062ff8fe6a8")
-	)
 	(label "G17"
 		(at 361.95 219.71 0)
 		(effects
@@ -9635,16 +9585,6 @@
 		)
 		(uuid "b2fa0724-e830-4615-a477-4210e80b7fd3")
 	)
-	(label "A7"
-		(at 311.15 275.59 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "b3bfbb7e-c9c3-4ffa-bf64-c1fda047779f")
-	)
 	(label "XIN"
 		(at 118.11 292.1 0)
 		(effects
@@ -9665,16 +9605,6 @@
 		)
 		(uuid "b90095b3-48c6-4c59-8d7a-67396822bfe5")
 	)
-	(label "A3"
-		(at 311.15 265.43 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "bd254ae4-1970-41c8-8f06-d3795da33823")
-	)
 	(label "G6"
 		(at 361.95 207.01 0)
 		(effects
@@ -9686,7 +9616,7 @@
 		(uuid "c1b79f28-18e8-46b2-8e91-824ddfbba290")
 	)
 	(label "GND"
-		(at 157.48 62.23 0)
+		(at 134.62 99.06 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9806,7 +9736,7 @@
 		(uuid "e10f21a0-5809-40ff-8902-b29b32ff19bc")
 	)
 	(label "G17"
-		(at 401.32 204.47 180)
+		(at 396.24 196.85 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9816,7 +9746,7 @@
 		(uuid "e17f8327-ff0a-4dd5-b6f8-a9b49ba64626")
 	)
 	(label "ESC2_PWM+"
-		(at 157.48 57.15 0)
+		(at 134.62 93.98 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11052,7 +10982,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x03")
-		(at 171.45 59.69 180)
+		(at 148.59 96.52 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11063,7 +10993,7 @@
 		(fields_autoplaced yes)
 		(uuid "3366f94a-aab2-4c87-97b3-9c0f4ba6954e")
 		(property "Reference" "J5"
-			(at 172.7201 64.77 90)
+			(at 149.8601 101.6 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11074,7 +11004,7 @@
 			)
 		)
 		(property "Value" "Conn_01x03"
-			(at 170.1801 64.77 90)
+			(at 147.3201 101.6 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11085,7 +11015,7 @@
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical"
-			(at 171.45 59.69 0)
+			(at 148.59 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11096,7 +11026,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 171.45 59.69 0)
+			(at 148.59 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11107,7 +11037,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 171.45 59.69 0)
+			(at 148.59 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11373,7 +11303,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_02x02_Odd_Even")
-		(at 406.4 204.47 0)
+		(at 401.32 196.85 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11383,7 +11313,7 @@
 		(dnp no)
 		(uuid "4042a069-1019-4f11-a34a-2a8f1e84f914")
 		(property "Reference" "J6"
-			(at 407.67 198.12 0)
+			(at 402.59 190.5 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11393,7 +11323,7 @@
 			)
 		)
 		(property "Value" "Conn_02x02_Odd_Even"
-			(at 407.67 200.66 0)
+			(at 402.59 193.04 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11403,7 +11333,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical"
-			(at 408.686 188.468 0)
+			(at 403.606 180.848 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11414,7 +11344,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 406.4 204.47 0)
+			(at 401.32 196.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11425,7 +11355,7 @@
 			)
 		)
 		(property "Description" "Generic connector, double row, 02x02, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 406.4 204.47 0)
+			(at 401.32 196.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12279,7 +12209,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 140.97 316.23 0)
+		(at 36.83 388.62 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12290,7 +12220,7 @@
 		(fields_autoplaced yes)
 		(uuid "5395d2fc-b5d2-418a-bedd-f3d9f6dbddf9")
 		(property "Reference" "H2"
-			(at 143.51 314.9599 0)
+			(at 39.37 387.3499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12301,7 +12231,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 143.51 317.4999 0)
+			(at 39.37 389.8899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12312,7 +12242,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
-			(at 140.97 316.23 0)
+			(at 36.83 388.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12323,7 +12253,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 140.97 316.23 0)
+			(at 36.83 388.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12334,7 +12264,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 140.97 316.23 0)
+			(at 36.83 388.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14304,7 +14234,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x03")
-		(at 133.35 59.69 180)
+		(at 110.49 96.52 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14315,7 +14245,7 @@
 		(fields_autoplaced yes)
 		(uuid "8238847b-beba-43cd-976a-b37341c09736")
 		(property "Reference" "J12"
-			(at 134.6201 64.77 90)
+			(at 111.7601 101.6 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14326,7 +14256,7 @@
 			)
 		)
 		(property "Value" "Conn_01x03"
-			(at 132.0801 64.77 90)
+			(at 109.2201 101.6 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14337,7 +14267,7 @@
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical"
-			(at 133.35 59.69 0)
+			(at 110.49 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14348,7 +14278,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 133.35 59.69 0)
+			(at 110.49 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14359,7 +14289,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 133.35 59.69 0)
+			(at 110.49 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15149,7 +15079,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x03")
-		(at 152.4 59.69 180)
+		(at 129.54 96.52 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15160,7 +15090,7 @@
 		(fields_autoplaced yes)
 		(uuid "9bf963f4-c12f-4aee-b51c-a9b40dc6a0a4")
 		(property "Reference" "J10"
-			(at 153.6701 64.77 90)
+			(at 130.8101 101.6 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15171,7 +15101,7 @@
 			)
 		)
 		(property "Value" "Conn_01x03"
-			(at 151.1301 64.77 90)
+			(at 128.2701 101.6 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15182,7 +15112,7 @@
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical"
-			(at 152.4 59.69 0)
+			(at 129.54 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15193,7 +15123,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 152.4 59.69 0)
+			(at 129.54 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15204,7 +15134,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 152.4 59.69 0)
+			(at 129.54 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15476,7 +15406,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 168.91 306.07 0)
+		(at 64.77 378.46 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15487,7 +15417,7 @@
 		(fields_autoplaced yes)
 		(uuid "a6ea3c1d-13b2-4251-b921-55fc43c76e2e")
 		(property "Reference" "H3"
-			(at 171.45 304.7999 0)
+			(at 67.31 377.1899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15498,7 +15428,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 171.45 307.3399 0)
+			(at 67.31 379.7299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15509,7 +15439,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
-			(at 168.91 306.07 0)
+			(at 64.77 378.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15520,7 +15450,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 168.91 306.07 0)
+			(at 64.77 378.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15531,7 +15461,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 168.91 306.07 0)
+			(at 64.77 378.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16117,7 +16047,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x03")
-		(at 114.3 59.69 180)
+		(at 91.44 96.52 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -16128,7 +16058,7 @@
 		(fields_autoplaced yes)
 		(uuid "b461bfb5-5a09-4d3f-ab30-d33c62838df0")
 		(property "Reference" "J15"
-			(at 115.5701 64.77 90)
+			(at 92.7101 101.6 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16139,7 +16069,7 @@
 			)
 		)
 		(property "Value" "Conn_01x03"
-			(at 113.0301 64.77 90)
+			(at 90.1701 101.6 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16150,7 +16080,7 @@
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical"
-			(at 114.3 59.69 0)
+			(at 91.44 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16161,7 +16091,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 114.3 59.69 0)
+			(at 91.44 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16172,7 +16102,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 114.3 59.69 0)
+			(at 91.44 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17819,7 +17749,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 140.97 306.07 0)
+		(at 36.83 378.46 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -17830,7 +17760,7 @@
 		(fields_autoplaced yes)
 		(uuid "ddacf8d2-c421-4378-9674-4a0bc19e1c04")
 		(property "Reference" "H1"
-			(at 143.51 304.7999 0)
+			(at 39.37 377.1899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17841,7 +17771,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 143.51 307.3399 0)
+			(at 39.37 379.7299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17852,7 +17782,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
-			(at 140.97 306.07 0)
+			(at 36.83 378.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17863,7 +17793,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 140.97 306.07 0)
+			(at 36.83 378.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17874,7 +17804,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 140.97 306.07 0)
+			(at 36.83 378.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17977,7 +17907,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 168.91 316.23 0)
+		(at 64.77 388.62 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -17988,7 +17918,7 @@
 		(fields_autoplaced yes)
 		(uuid "e03350b6-9d20-429b-8b57-ce71af22139d")
 		(property "Reference" "H4"
-			(at 171.45 314.9599 0)
+			(at 67.31 387.3499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17999,7 +17929,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 171.45 317.4999 0)
+			(at 67.31 389.8899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18010,7 +17940,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
-			(at 168.91 316.23 0)
+			(at 64.77 388.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18021,7 +17951,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 168.91 316.23 0)
+			(at 64.77 388.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18032,7 +17962,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 168.91 316.23 0)
+			(at 64.77 388.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
